@@ -1,0 +1,309 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face{
+    font-family: "NewYork";
+    src: url(NewYork\ PERSONAL\ USE.otf);
+}
+@font-face {
+    font-family: "Body Grotesque Fit Trial";
+    src: url(Body-Grotesque-Fit-Bold-trial.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: linear-gradient(75deg, #f8e4dc, #fbe8e6, #fcedef, #fcf2f7, #fcf8fc, #fcf8fc, #fcf8fc, #fcf8fc, #fcf2f7, #fcedef, #fbe8e6, #f8e4dc);
+}
+
+nav {
+    margin: auto;
+    min-height: 80px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Body Grotesque Fit Trial", "DM Serif Display";
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.582);
+    font-family: Body Grotesque Fit Trial, "Poppins";
+}
+
+nav h3{
+    font-weight:800;
+    color: #f08267;
+}
+
+nav ul a {
+    padding-inline: 1.6em;
+}
+
+#cart{
+    position: relative;
+}
+
+#cart::after{
+    content: "1";
+    position: absolute;
+    padding: 2px 10px;
+    border-radius: 50%;
+    background-color: #f08267;
+    font-family: poppins;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    top: -2px;
+}
+
+
+.hr{
+    width: 75%;
+    height: 1px;
+    margin: auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 8%, rgba(0, 0, 0, 0.26) 50%, rgba(248,228,220,0) 92%);
+}
+
+.cnt-head {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #fa84679f;
+    font-weight: 300;
+    margin-right: 2vw;
+}
+
+.cnt-head span{
+    color: #f08267;
+    letter-spacing: 0;
+    font-family: Body Grotesque Fit Trial,"DM Serif Display" ;
+    margin-top: 5px;
+}
+
+main{
+    padding-top: 45px;
+    padding-inline: 6em;
+    position: relative;
+}
+
+.container {
+    padding-inline: 2em;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 85lvh;
+    max-width: 1200px;
+}
+
+.container img{
+    transform: translateY(-50px);
+    height: 40vw;
+}
+
+.container span {
+    max-width: 50%;
+}
+
+.container span p {
+    font-family: "NewYork", "DM Serif Display";
+    font-size: clamp(2rem, 7vw, 5.5rem);
+}
+
+.container span button{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 2rem;
+    border: 1px solid;
+    background-color: transparent;
+    font-size: .7rem;
+    font-family: poppins;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+footer{
+    max-width: 1100px;
+    height: 168px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: whitesmoke;
+    margin: auto;
+}
+
+.footer-left {
+    width: 700px;
+    height: 100%;
+    background-image: url(snapedit_1705704682027.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: poppins;
+}
+
+
+.footer-left div{
+    padding-top: 40px;
+}
+
+.lux {
+    font-family: "DM Serif Display", serif;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    line-height: .6;
+    letter-spacing: 1px;
+}
+
+.simple-text{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-left: 10px;
+    letter-spacing: 0;
+}
+
+
+article{
+    font-size: .8rem;
+    height: fit-content;
+    padding-top: 30px;
+}
+
+article p{
+    margin-bottom: 15px;
+}
+
+article,
+.simple-text{
+    font-family: poppins;
+}
+
+
+.footer-right {
+    transform: translateY(-32.5%);
+}
+.footer-right img{
+    height: 200px;
+    min-height: 50px;
+}
+.footer-right h3 {
+    line-height:1 ;
+    font-family: Body Grotesque Fit Trial ;
+    color: #EDA08C;
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width:1250px) {
+    .container{
+        height: fit-content;
+    }
+}
+
+@media (max-width:768px) {
+    nav{
+        height: 20px;
+    }
+    nav ul a {
+        padding-inline: .5em;
+    }
+    .cnt-head{
+        text-align: center;
+        margin: 0;
+    }
+    main {
+        padding: 0%;
+    }
+    .container span button{
+        display: none;
+    }
+    .hr{
+        transform: translateY(-20px);
+    }
+    .footer-left{
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+    }
+    .footer-right{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        transform: translateY(0);
+        padding-right: 30px;
+    }
+    .footer-right img{
+        position: absolute;
+        left: 0;
+    }
+    .footer-right h3{
+        margin-top: 50px;
+    }
+    article span{
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:425px) {
+    .cnt-head{
+        text-align: center;
+        padding-left: 4em;
+    }
+    nav {
+        justify-content: start;
+        gap: 1em;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-left: auto;
+    }
+}
+
+@media (max-width:380px) {
+    nav{
+        width: 80%;
+    }
+    .container img{
+        transform: translate(0);
+    }
+    .container span p{
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-top: 13px;
+    }
+    .cnt-head{
+        padding: 0%;
+    }
+    
+}
